@@ -1,29 +1,92 @@
 /**** HEADER *****/
 
-.contenedor {
+
+/**** MAIN ****/
+
+/** Institutos **/
+.contenedor-institutos {
     display: flex;
-    margin: 0 15rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Fuentes de google fonts */
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .cft {
-    background-color: brown;
+    background-color: #6F1D28;
     color: #ffffff;
+    position: relative;
+    flex: 33.3%;
+    height: 245px;
 }
 
 .ip {
-    background-color: red;
+    background-color: #B22834;
     color: #ffffff;
+    position: relative;
+    flex: 33.3%;
+    height: 245px;
 }
 
 .educacion {
-    background-color: orange;
+    background-color: #E4792E;
     color: #ffffff;
+    flex: 33.3%;
+    height: 245px;
 }
 
-.alejar {
+.texto {
     margin: 2rem 2rem;
 }
 
-a {
+.contenedor-institutos a {
     color: #ffffff; 
 }
+
+.contenedor-institutos h2 {
+    width: 65%;
+}
+
+.cft h2 {
+    width: 100%;
+}
+
+/* Relleno para los contenedores para que sea vea como el de inacap */
+
+.relleno-arriba {
+    border-left: 30px solid transparent;
+    border-top: 122.5px solid #B22834;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.relleno-abajo {
+    border-left: 30px solid transparent;
+    border-bottom: 122.5px solid #B22834;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.relleno-arriba-naranjo {
+    border-left: 30px solid transparent;
+    border-top: 122.5px solid #E4792E;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.relleno-abajo-naranjo {
+    border-left: 30px solid transparent;
+    border-bottom: 122.5px solid #E4792E;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/**** FOOTER ****/
