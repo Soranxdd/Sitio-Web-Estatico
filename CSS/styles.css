@@ -1,0 +1,29 @@
+/**** HEADER *****/
+
+.contenedor {
+    display: flex;
+    margin: 0 15rem;
+}
+
+.cft {
+    background-color: brown;
+    color: #ffffff;
+}
+
+.ip {
+    background-color: red;
+    color: #ffffff;
+}
+
+.educacion {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.alejar {
+    margin: 2rem 2rem;
+}
+
+a {
+    color: #ffffff; 
+}
