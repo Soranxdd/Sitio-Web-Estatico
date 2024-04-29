@@ -242,5 +242,137 @@ header ul {
     right: 0;
 }
 
+/** Contenedor estudiar **/
+.contenedor-estudiar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.espacio {
+    flex-basis: 32%;
+    background-color: #F0F0F0;
+}
+
+.contenedor-estudiar h4, .gris a, .rojo a {
+    font-weight: bold;
+}
+
+.contenedor-estudiar h4 {
+    font-size: 24px;
+}
+
+.estudiar {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gris {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: #707070;
+}
+
+.rojo {
+    background-color: #CC0000;
+}
+
+.espacio div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1.1rem;
+}
+
+.espacio a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.estudiar i {
+    font-size: 2rem;
+    color: #CC0000;
+}
+
+.espaciado {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.espaciado a {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+}
+
+.abajo {
+    position: absolute;
+    bottom: 10px;
+}
+
+/** Contenedor Ficha Inacap **/
+.ficha-inacap {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    max-width: 1200px;
+    margin: 2rem auto;
+    font-weight: bold;
+}
+
+.contenedor-ficha-inacap {
+    display: flex;
+}
+
+.imagen-ficha-inacap {
+    flex: 70%;
+    text-align: center;
+}
+
+.texto-ficha-inacap {
+    flex: 30%;
+    background-color: #B50000;
+}
+
+.text {
+    margin: 2rem;
+}
+
+.ficha-inacap .pequeño {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ficha-inacap h4 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.lineas p::after {
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    width: 18.3rem;
+    height: .05rem;
+    background-color: rgba(255, 255, 255, 50%)
+}
+
+.imagen-ficha-inacap img {
+    width: 90%;
+    height: 40%;
+    margin-top: 10rem;
+}
+
+.imagen-ficha-inacap p {
+    color: #000000;
+    font-size: 2rem;
+}
 
 /**** FOOTER ****/
