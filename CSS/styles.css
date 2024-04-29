@@ -1,6 +1,160 @@
 /**** HEADER *****/
 
 
+/** Primer Navbar **/
+.navbar1 a:not(.circulo) {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar1 li, .iconos a, .icon {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header ul {
+    padding: 0;
+}
+
+.navbar1 {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contenedor-navbar, .iconos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.circulo {
+    background-color: #252524;
+    border-radius: 15px;
+    padding: 0.2rem 0.4rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contenedor-navbar li, .icon {
+    position: relative;
+}
+
+.contenedor-navbar li:after, .icon::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 10px;
+    width: 1px;
+    background-color: #707070;
+}
+
+
+/** Segundo Navbar **/
+.navbar2 {
+    display: flex;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contenedor-navbar2 {
+    display: flex;
+}
+
+.navbar2 li {
+    list-style: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar2 a:not(.circulo-rojo) {
+    color: #222220;
+    text-decoration: none;
+}
+
+.navbar2 img {
+    height: 40px;
+}
+
+.contenedor-nav {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.contenedor-img {
+    padding-right: 3rem;
+}
+
+.circulo-rojo {
+    background-color: #CE382B;
+    border-radius: 15px;
+    padding: 0.2rem 0.4rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.imagen-fondo {
+    background-size: 100%;
+    background-image: url(https://portales.inacap.cl/Assets/home/slider/2024/abril/EvolucionTP.jpg);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.cont {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.cont a {
+    color: #CE392B;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imagen-fondo-contenedor {
+    display: flex;
+}
+
+.flex {
+    flex-basis: 37%;
+    padding-left: 2rem;
+}
+
+.circulo-blanco {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 0.2rem 3.4rem;
+    width: max-content;
+    margin-left: 1rem;
+}
+
+.imagen-fondo-abajo {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 19px;
+    padding: 0.1rem 0;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
 /**** MAIN ****/
 
 /** Institutos **/
