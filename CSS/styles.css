@@ -375,4 +375,40 @@ header ul {
     font-size: 2rem;
 }
 
+/** Contenedor noticias **/
+.noticia-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cajas-noticia {
+    flex: 0 0 calc(30% - 10px);
+    background-color: #E6E5E6;
+    margin: 0.5rem;
+    color: #666;
+}
+
+.cajas-noticia p {
+    margin: 1rem;
+}
+
+.noticia-flex img {
+    height: 25rem;
+    background-color: #000000;
+}
+
+.noticias {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.noticias h3 {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
 /**** FOOTER ****/
