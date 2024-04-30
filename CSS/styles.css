@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /**** HEADER *****/
 
 
@@ -24,6 +28,10 @@ header ul {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.fondo-gris {
+    background-color: #F0F0F0;
 }
 
 .contenedor-navbar, .iconos {
@@ -63,10 +71,16 @@ header ul {
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
+    justify-content: center;
 }
 
 .contenedor-navbar2 {
     display: flex;
+    align-items: center;
+}
+
+.contenedor-navbar2 {
+    margin-bottom: 0;
 }
 
 .navbar2 li {
@@ -102,14 +116,13 @@ header ul {
     text-decoration: none;
 }
 
-.imagen-fondo {
-    background-size: 100%;
-    background-image: url(https://portales.inacap.cl/Assets/home/slider/2024/abril/EvolucionTP.jpg);
-    background-repeat: no-repeat;
-    z-index: 1;
-}
+/** Slider **/
 
-.cont {
+.slider {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -117,25 +130,50 @@ header ul {
     color: #FFFFFF;
 }
 
-.bold{
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.cont a {
-    color: #CE392B;
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.imagen-fondo-contenedor {
+.slider ul {
     display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
-.flex {
-    flex-basis: 37%;
-    padding-left: 2rem;
+.slider li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-texto {
+    position: absolute;
+    padding-top: 1.5rem;
+    padding-left: 4.5rem;
+    padding-right: 50%;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+}
+
+.slider h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
 
 .circulo-blanco {
@@ -144,15 +182,26 @@ header ul {
     padding: 0.2rem 3.4rem;
     width: max-content;
     margin-left: 1rem;
+    position: absolute;
+    bottom: 110px;
+    left: 65px;
+}
+
+.circulo-blanco a {
+    color: #CE392B;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .imagen-fondo-abajo {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     font-size: 19px;
-    padding: 0.1rem 0;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #FFFFFF;
 }
 
 /**** MAIN ****/
@@ -194,6 +243,10 @@ header ul {
 
 .texto {
     margin: 2rem 2rem;
+}
+
+.texto p {
+    margin-bottom: 1.5rem;
 }
 
 .contenedor-institutos a {
@@ -247,11 +300,16 @@ header ul {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-top: 2.5rem;
 }
 
 .espacio {
     flex-basis: 32%;
     background-color: #F0F0F0;
+}
+
+.estudiar h2 {
+    font-size: 2rem;
 }
 
 .contenedor-estudiar h4, .gris a, .rojo a {
@@ -267,8 +325,9 @@ header ul {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .gris {
@@ -321,7 +380,7 @@ header ul {
     font-style: normal;
     color: #FFFFFF;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 6rem auto;
     font-weight: bold;
 }
 
@@ -379,21 +438,24 @@ header ul {
 .noticia-flex {
     display: flex;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 .cajas-noticia {
-    flex: 0 0 calc(30% - 10px);
+    flex: 0 0 calc(33% - 34.5px);
     background-color: #E6E5E6;
-    margin: 0.5rem;
+    margin: 1.2rem;
     color: #666;
 }
 
 .cajas-noticia p {
     margin: 1rem;
+    font-size: 18px;
 }
 
 .noticia-flex img {
-    height: 25rem;
+    height: 276px;
+    width: 360px;
     background-color: #000000;
 }
 
@@ -402,13 +464,104 @@ header ul {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    max-width: 1250px;
+    font-weight: bold;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .noticias h3 {
     font-size: 2rem;
-    margin-left: 0.5rem;
+    margin-left: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 /**** FOOTER ****/
+
+.footer-flex {
+    display: flex;
+}
+
+footer {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #0F0C0F;
+    color: #FFFFFF;
+    margin-top: 3rem;
+    font-size: 14px;
+    font-weight: bold;
+    height: 408px;
+}
+
+footer li {
+    list-style: none;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+footer ul {
+    padding: 0;
+}
+
+
+
+.footer-primero {
+    flex: 28%;
+}
+
+.footer-segundo {
+    flex: 28%;
+}
+
+.footer-tercero {
+    flex: 22%;
+}
+
+.footer-cuarto {
+    flex: 22%;
+}
+
+.footer-margin {
+    margin: 0 15rem;
+    padding: 1rem 0;
+}
+
+.cuadrado::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+}
+
+.cuadrado {
+    margin-left: 1rem;
+}
+
+.logos {
+    display: flex;
+    position: relative;
+}
+
+.logo-inacap {
+    height: 3rem;
+}
+
+.logos-varios img {
+    height: 4rem;
+}
+
+.logos-varios {
+    position: absolute;
+    right: 10rem;
+}
+
+.footer-icon {
+    margin-right: 0.7rem;
+    color: #FF575F;
+}
